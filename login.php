@@ -20,8 +20,8 @@ $error = null;
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    $email =test_input( $_POST['email'] ?? null);
-    $contrasena =test_input(  $_POST['contrasena'] ?? null);
+    $email = test_input($_POST['email'] ?? null);
+    $contrasena = test_input($_POST['contrasena'] ?? null);
 
     $usuario = Usuario::login($cnx, $email, $contrasena);
 
